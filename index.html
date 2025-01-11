@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTROL DE CUENTAS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CONTROL DE CUENTAS</h1>
+        <form id="accountForm">
+            <label for="accountData">Datos de la cuenta:</label>
+            <input type="text" id="accountData" required>
+            <button type="button" id="saveButton">Guardar</button>
+        </form>
+        <table id="accountsTable">
+            <thead>
+                <tr>
+                    <th>Datos de la cuenta</th>
+                    <th>Fecha de compra</th>
+                    <th>Estado</th>
+                    <th>Datos del comprador</th>
+                    <th>Fecha de vencimiento</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Las filas de datos se agregarán aquí dinámicamente -->
+            </tbody>
+        </table>
+        <input type="text" id="filterInput" placeholder="Filtrar cuentas...">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
